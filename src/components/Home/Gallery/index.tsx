@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Gallery = () => {
     return (
-        <section>
+        <section className="py-24 sm:py-36">
             <div className='container mx-auto lg:max-w-screen-xl md:max-w-screen-md' id='gallery-section'>
                 <div className="text-center">
                     <p className='text-primary text-lg font-normal mb-3 tracking-widest uppercase'>Our Gallery</p>
