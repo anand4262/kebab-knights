@@ -83,12 +83,12 @@ const Header: React.FC = () => {
               +(61)451558600
             </Link>
 
-            <Link
+            {/* <Link
               href="#menu-section"
               className="hidden lg:block text-primary bg-primary/15 hover:text-white hover:bg-primary font-medium text-lg py-4 px-8 rounded-full"
             >
               Order Now
-            </Link>
+            </Link> */}
 
             {/* Hamburger Icon */}
             <button
@@ -162,13 +162,13 @@ const Header: React.FC = () => {
                   transition={{ duration: 0.5, ease: "easeOut" }}
                   className="mt-8"
                 >
-                  <Link
+                 {/*  <Link
                     href="#menu-section"
                     onClick={() => setNavbarOpen(false)}
                     className="inline-block text-sm sm:text-base text-primary border border-primary px-5 sm:px-6 py-2 rounded-full hover:bg-primary hover:text-black transition"
                   >
                     Order Now
-                  </Link>
+                  </Link> */}
                 </motion.div>
               </motion.nav>
             </motion.div>

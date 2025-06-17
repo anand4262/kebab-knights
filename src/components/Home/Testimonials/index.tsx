@@ -26,7 +26,7 @@ const sliderSettings = {
 };
 
 const Testimonials = () => (
-  <section id="testimonials" className="bg-[#fdfcfa] py-24 sm:py-36 px-6">
+  <section id="testimonials-section" className="bg-[#fdfcfa] py-24 sm:py-36 px-6">
     <div className="max-w-6xl mx-auto">
       {/* Styled Section Heading */}
       <p className="text-primary text-lg font-normal mb-3 tracking-widest uppercase text-start">

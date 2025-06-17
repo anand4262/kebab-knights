@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const OurTeam = () => {
   return (
-    <section id="team" className="relative h-[90vh] w-full overflow-hidden text-offwhite py-24 sm:py-36">
+    <section id="team-section" className="relative h-[90vh] w-full overflow-hidden text-offwhite py-24 sm:py-36">
       {/* Background Team Image */}
       <Image
         src="/images/team/our-team.png"

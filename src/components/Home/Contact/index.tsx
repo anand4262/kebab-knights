@@ -24,7 +24,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative bg-[#fdfcfa] text-charcoal py-24 sm:py-36  px-4">
+    <section id="contact-section" className="relative bg-[#fdfcfa] text-charcoal py-24 sm:py-36  px-4">
       <div className="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Contact Form */}
         <div>

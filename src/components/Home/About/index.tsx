@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 sm:py-36 bg-white text-charcoal">
+    <section id="about-section" className="py-24 sm:py-36 bg-white text-charcoal">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         {/* Image */}
         <motion.div

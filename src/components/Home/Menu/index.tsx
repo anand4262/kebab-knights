@@ -13,7 +13,7 @@ const Menu = () => {
   const isGrid = selectedItems.length >= 3;
 
   return (
-    <section id="menu" className="bg-charcoal text-offwhite py-24 sm:py-36 px-4">
+    <section id="menu-section" className="bg-charcoal text-offwhite py-24 sm:py-36 px-4">
       <div className="container mx-auto max-w-screen-xl flex flex-col items-center">
         
         {/* Section Heading */}
