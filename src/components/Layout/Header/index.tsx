@@ -71,7 +71,7 @@ const Header: React.FC = () => {
 
           {/* Right-side icons */}
           <div className="flex items-center gap-4">
-            <Link
+           {/*  <Link
               href="tel:0451558600"
               className={`text-sm sm:text-base font-medium flex items-center gap-2 transition-colors duration-300 ${
                 sticky
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
             >
               <Icon icon="solar:phone-bold" className="text-xl text-primary" />
               +(61)451558600
-            </Link>
+            </Link> */}
 
             {/* <Link
               href="#menu-section"

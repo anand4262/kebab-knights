@@ -8,6 +8,7 @@ import OurTeam from "@/components/Home/Team"
 import Testimonials from "@/components/Home/Testimonials";
 import Contact from "@/components/Home/Contact"
 import Faq from "@/components/Home/FAQs";
+import StickyCallButton from "@/components/Common/StickyCallButton";
 import { Metadata } from "next";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -33,6 +34,7 @@ export default function Home() {
       <Testimonials />
       <Faq />
       < Contact />
+      <StickyCallButton />
     </main>
   );
 }
