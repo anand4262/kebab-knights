@@ -49,7 +49,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.a
-          href="#menu"
+          href="#menu-section"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3 }}

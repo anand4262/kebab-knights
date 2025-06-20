@@ -4,25 +4,24 @@ import Link from "next/link";
 import { HeaderItem } from "../../../../types/menu";
 import { usePathname } from "next/navigation";
 
-const HeaderLink: React.FC<{ item: HeaderItem; sticky: boolean; activeSection: string }> = ({
-  item,
-  sticky,
-  activeSection,
-}) => {
+const HeaderLink: React.FC<{
+  item: HeaderItem;
+  sticky: boolean;
+  activeSection: string;
+}> = ({ item, sticky, activeSection }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname();
 
-  const handleMouseEnter = () => {
-    if (item.submenu) {
-      setSubmenuOpen(true);
-    }
-  };
+  const handleMouseEnter = () => item.submenu && setSubmenuOpen(true);
+  const handleMouseLeave = () => setSubmenuOpen(false);
 
-  const handleMouseLeave = () => {
-    setSubmenuOpen(false);
-  };
+  // Determine if the link is a section (hash) link
+  const isSectionLink = item.href.startsWith("#");
+  const cleanedHref = item.href.replace("#", "");
 
-  const isActive = activeSection === item.href || path === item.href;
+  const isActive = isSectionLink
+    ? activeSection === cleanedHref
+    : path === item.href;
 
   return (
     <div
@@ -33,15 +32,14 @@ const HeaderLink: React.FC<{ item: HeaderItem; sticky: boolean; activeSection: s
       <Link
         href={item.href}
         className={`text-xl flex items-center font-medium transition-all duration-300 ${
-        sticky
-          ? isActive
+          sticky
+            ? isActive
+              ? "text-primary"
+              : "text-black hover:text-primary"
+            : isActive
             ? "text-primary"
-            : "text-black hover:text-primary"
-          : isActive
-          ? "text-primary"
-          : "text-white hover:text-primary"
-      }`}
-
+            : "text-white hover:text-primary"
+        }`}
       >
         {item.label}
         {item.submenu && (
@@ -64,25 +62,25 @@ const HeaderLink: React.FC<{ item: HeaderItem; sticky: boolean; activeSection: s
         )}
       </Link>
 
+      {/* Submenu */}
       {submenuOpen && (
-        <div
-          className="absolute py-2 left-0 mt-0.5 w-60 bg-white dark:bg-darklight dark:text-white shadow-lg rounded-lg"
-          data-aos="fade-up"
-          data-aos-duration="500"
-        >
-          {item.submenu?.map((subItem, index) => (
-            <Link
-              key={index}
-              href={subItem.href}
-              className={`block px-4 py-2 ${
-                path === subItem.href
-                  ? "bg-primary text-white"
-                  : "text-black dark:text-white hover:bg-primary"
-              }`}
-            >
-              {subItem.label}
-            </Link>
-          ))}
+        <div className="absolute py-2 left-0 mt-0.5 w-60 bg-white dark:bg-darklight dark:text-white shadow-lg rounded-lg z-50">
+          {item.submenu?.map((subItem, index) => {
+            const isSubActive = path === subItem.href;
+            return (
+              <Link
+                key={index}
+                href={subItem.href}
+                className={`block px-4 py-2 ${
+                  isSubActive
+                    ? "bg-primary text-white"
+                    : "text-black dark:text-white hover:bg-primary hover:text-black"
+                }`}
+              >
+                {subItem.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>

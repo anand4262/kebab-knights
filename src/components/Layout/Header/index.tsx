@@ -11,7 +11,7 @@ import { Icon } from "@iconify/react";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { motion, AnimatePresence } from "framer-motion";
 
-const sectionIds = ["home", "about-section", "menu", "gallery", "contact"];
+const sectionIds = ["home-section", "about-section", "menu-section", "gallery-section", "contact-section"];
 
 const Header: React.FC = () => {
   const { theme } = useTheme();
