@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Kebab Knights',
     images: [
       {
-        url: '/images/og-banner.jpg',
+        url: 'https://kebabknights.com.au/images/og-banner.png',
         width: 1200,
         height: 630,
         alt: 'Kebab Knights hero image',

@@ -1,10 +1,38 @@
-'use client';
-
+import { Metadata } from 'next';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
 import { Icon } from '@iconify/react';
+
+export const metadata: Metadata = {
+  title: 'Promo Deals | Kebab Knights Ascot Vale',
+  description: 'Grab the best promo deals on kebabs, HSPs, and combos in Ascot Vale. Limited-time offers at Kebab Knights!',
+  keywords: ['Kebab deals', 'HSP promo', 'combo meals Melbourne', 'halal kebabs Ascot Vale', 'cheap kebab offers'],
+  openGraph: {
+    title: 'Promo Deals | Kebab Knights Ascot Vale',
+    description: 'Limited-time kebab deals you can’t miss. Grab yours now at Kebab Knights in Ascot Vale!',
+    url: 'https://kebabknights.com.au/promo',
+    type: 'website',
+    siteName: 'Kebab Knights',
+    images: [
+      {
+        url: 'https://kebabknights.com.au/images/landing/landing-og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Promo Kebabs Ascot Vale',
+      },
+    ],
+    locale: 'en_AU',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Promo Deals | Kebab Knights Ascot Vale',
+    description: 'Don’t miss exclusive kebab combo offers in Ascot Vale. Kebab Knights promo menu is live!',
+    images: ['https://kebabknights.com.au/images/landing/landing-og.png'],
+  },
+  alternates: {
+    canonical: 'https://kebabknights.com.au/promo',
+  },
+};
 
 const bestSellers = [
   {
@@ -27,24 +55,9 @@ const bestSellers = [
   },
 ];
 
-export default function LandingPage() {
+export default function PromoLandingPage() {
   return (
     <>
-      {/* SEO Meta */}
-      <Head>
-        <title>Kebab Knights | Best Kebabs in Ascot Vale</title>
-        <meta
-          name="description"
-          content="Craving flavour-packed kebabs in Ascot Vale? Kebab Knights serves wraps, HSPs & more till 2 AM. Visit now!"
-        />
-        <meta name="keywords" content="kebab ascot vale, late night kebab, best HSP Melbourne, halal food, kebab wrap" />
-        <meta property="og:title" content="Kebab Knights | Best Kebabs in Ascot Vale" />
-        <meta property="og:description" content="Delicious kebabs, HSPs & more. Open till 2 AM. Visit Kebab Knights in Ascot Vale." />
-        <meta property="og:image" content="/images/landing/landing-og.png" />
-        <meta property="og:url" content="https://kebabknights.com.au" />
-        <meta property="og:type" content="website" />
-      </Head>
-
       {/* Hero Section */}
       <section className="relative bg-[#fffaf3] text-charcoal min-h-[100vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -52,7 +65,7 @@ export default function LandingPage() {
         </div>
 
         <div className="relative container mx-auto max-w-screen-xl px-6 py-24 md:py-40 grid grid-cols-1 md:grid-cols-2 items-center gap-16 z-10">
-          {/* Text Content */}
+          {/* Text */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,8 +78,6 @@ export default function LandingPage() {
             <p className="text-lg text-gray-700 max-w-xl">
               Your go-to destination in Ascot Vale for mouthwatering kebabs, wraps, falafel and more. Open daily till 2 AM!
             </p>
-
-            {/* CTA */}
             <div className="flex flex-wrap gap-4 mt-6">
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Kebab+Knights+Ascot+Vale"
@@ -102,19 +113,17 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Best Sellers Section */}
+      {/* Best Sellers */}
       <section id="best-sellers" className="bg-[#111111] text-[#FAF9F6] py-20">
         <div className="container mx-auto max-w-screen-xl px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-            Fan Favorites
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Fan Favorites</h2>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {bestSellers.map((item, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.3 }}
-                className="bg-[#1c1c1c]  rounded-xl overflow-hidden shadow-lg"
+                className="bg-[#1c1c1c] rounded-xl overflow-hidden shadow-lg"
               >
                 <Image
                   src={item.image}
