@@ -27,7 +27,7 @@ const Gallery = () => {
                                     src={item.src}
                                     alt={item.name}
                                     width={600}
-                                    height={500}
+                                    height={600}
                                     className="object-cover w-full h-full"
                                 />
                                 <div className="w-full h-full absolute bg-black/40 top-full group-hover:top-0 duration-500 p-12 flex flex-col items-start gap-8 justify-end">
@@ -38,9 +38,7 @@ const Gallery = () => {
                                         <p className='text-white text-2xl'>
                                             <span className='font-semibold'>Price:</span> ${item.price}
                                         </p>
-                                        <Link href="#" className='text-white rounded-full bg-primary border border-primary py-2 px-6 hover:bg-primary/40 hover:backdrop-blur-sm'>
-                                            Learn More
-                                        </Link>
+                                        
                                     </div>
                                 </div>
                             </div>

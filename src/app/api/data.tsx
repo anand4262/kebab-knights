@@ -65,8 +65,11 @@ export const ExpertData: {
 
 // data.tsx
 export const galleryImages = [
-  { src: '/images/Gallery/foodone.jpg', name: 'Caesar Salad(187 Kcal)', price: 35 },
-  { src: '/images/Gallery/foodtwo.jpg', name: 'Christmas salad(118 Kcal)', price: 17 },
-  { src: '/images/Gallery/foodthree.jpg', name: 'Sauteed mushrooms with pumpkin and sweet pepper(238 kcal)', price: 45 },
-  { src: '/images/Gallery/foodfour.jpg', name: 'BBQ Chicken Feast Pizza(272 kcal)', price: 27 },
+  { src: '/images/menu/mixed-hsp-can.jpeg', name: 'HSP(1870 Kcal)', price: 16.50 },
+  /* { src: '/images/menu/garlic-bread-ch.jpg', name: 'Christmas salad(118 Kcal)', price: 8 }, */
+  { src: '/images/menu/lg-sweet-chips.jpg', name: 'Sweet Potato Chips(272 kcal)', price: 8 },
+  { src: '/images/menu/chips-gravy.jpg', name: 'Chips with Gravy', price: 6 },
+  { src: '/images/menu/kebab-gallery.webp', name: 'Christmas salad(118 Kcal)', price: 8 },
+  
 ];
+
