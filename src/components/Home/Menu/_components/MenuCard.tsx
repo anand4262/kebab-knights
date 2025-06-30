@@ -25,7 +25,7 @@ const MenuCard = ({ item, index }: { item: MenuItem; index: number }) => {
         width={400}
         height={250}
         loading="lazy"
-        className="w-full h-52 object-cover"
+        className="w-full h-52 object-cover aspect-[4/2.5]"
       />
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2 text-primary">{item.name}</h3>

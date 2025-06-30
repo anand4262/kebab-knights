@@ -47,7 +47,7 @@ const About = () => {
 
           {/* CTA */}
           <a
-            href="#menu"
+            href="#menu-section"
             className="inline-block mt-4 bg-primary text-black px-6 py-3 rounded-xl text-sm font-semibold shadow hover:bg-[#c99700] transition"
           >
             See Our Menu
