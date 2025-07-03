@@ -10,6 +10,7 @@ import { Metadata } from "next";
 const font = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
