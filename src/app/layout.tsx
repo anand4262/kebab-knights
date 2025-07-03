@@ -14,6 +14,7 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
+   metadataBase: new URL('https://kebabknights.com.au'),
   title: 'Kebab Knights | Melbourne’s Best Street Kebab Experience',
   description:
     'Kebab Knights brings the ultimate halal kebab experience to Melbourne. Enjoy juicy kebab wraps, HSPs, falafel, and charcoal-grilled meats with unmatched flavour and late-night service.',
