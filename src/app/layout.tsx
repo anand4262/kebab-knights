@@ -65,6 +65,9 @@ export const metadata: Metadata = {
     follow: true,
     nocache: false,
   },
+  other: {
+    "google-site-verification": "DzjPfpk2dYKX7TdgBCHQin4ML40z_lLci8FQ4BRePfg", 
+  },
 };
 
 
