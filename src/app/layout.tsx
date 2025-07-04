@@ -66,9 +66,10 @@ export const metadata: Metadata = {
     nocache: false,
   },
   other: {
-    "google-site-verification": "DzjPfpk2dYKX7TdgBCHQin4ML40z_lLci8FQ4BRePfg", 
+    "google-site-verification": "Yj5p9YZL2lhQ5YBG5nTGpUgpHtmv8SwZOUbDPxy29QM", 
   },
 };
+
 
 
 export default function RootLayout({
