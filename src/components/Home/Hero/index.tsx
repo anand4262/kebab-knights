@@ -11,7 +11,7 @@ const Hero = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
-        poster="/images/hero/hero-fallback.png"
+        poster="/images/hero/hero-fallback.webp"
       >
         <source src="/videos/kebab-grill.mp4" type="video/mp4" />
       </video>

@@ -15,7 +15,7 @@ const About = () => {
           className="md:w-1/2 w-full overflow-hidden rounded-3xl shadow-2xl"
         >
           <img
-            src="/images/about/about-kebab.png"
+            src="/images/about/about-kebab.webp"
             alt="Meet the Kebab Knights team"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />

@@ -65,10 +65,10 @@ export const ExpertData: {
 
 // data.tsx
 export const galleryImages = [
-  { src: '/images/menu/mixed-hsp-can.jpeg', name: 'HSP(1870 Kcal)', price: 16.50 },
+  { src: '/images/menu/mixed-hsp-can.webp', name: 'HSP(1870 Kcal)', price: 16.50 },
   /* { src: '/images/menu/garlic-bread-ch.jpg', name: 'Christmas salad(118 Kcal)', price: 8 }, */
-  { src: '/images/menu/lg-sweet-chips.jpg', name: 'Sweet Potato Chips(272 kcal)', price: 8 },
-  { src: '/images/menu/chips-gravy.jpg', name: 'Chips with Gravy', price: 6 },
+  { src: '/images/menu/lg-sweet-chips.webp', name: 'Sweet Potato Chips(272 kcal)', price: 8 },
+  { src: '/images/menu/chips-gravy.webp', name: 'Chips with Gravy', price: 6 },
   { src: '/images/menu/kebab-gallery.webp', name: 'Christmas salad(118 Kcal)', price: 8 },
   
 ];
