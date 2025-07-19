@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
 import Script from "next/script";
 import { Metadata } from "next";
-
+import Analytics from "@/components/Common/Analytics";
 const font = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -135,6 +135,7 @@ export default function RootLayout({
       </head>
       <body className={font.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+           <Analytics /> 
           <Header />
           {children}
           <Footer />
