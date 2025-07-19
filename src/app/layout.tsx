@@ -7,7 +7,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Script from "next/script";
 import { Metadata } from "next";
 import GoogleAnalytics from "@/components/Common/GoogleAnalytics";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 const font = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -143,6 +145,7 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
            <Analytics />
+           <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
