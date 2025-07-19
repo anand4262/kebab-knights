@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-const Analytics = () => {
+const GoogleAnalytics = () => {
   return (
     <>
       <Script
@@ -21,4 +21,4 @@ const Analytics = () => {
   );
 };
 
-export default Analytics;
+export default GoogleAnalytics;
