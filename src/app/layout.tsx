@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description:
     'Kebab Knights brings the ultimate halal kebab experience to Melbourne. Enjoy juicy kebab wraps, HSPs, falafel, and charcoal-grilled meats with unmatched flavour and late-night service.',
   keywords: [
+    'Best Kebabs in Ascot Vale',
     'Kebab Knights',
     'Kebabs in Ascot Vale',
     'Kebab Knights Ascot Vale',

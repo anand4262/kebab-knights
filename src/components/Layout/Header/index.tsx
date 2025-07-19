@@ -75,7 +75,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-4">
             {/* Social Icons */}
             <div className="hidden lg:flex gap-4 items-center">
-              <Link href="https://facebook.com/kebabknights" target="_blank" aria-label="Facebook">
+              <Link href="https://www.facebook.com/Kebabknights/" target="_blank" aria-label="Facebook">
                 <Icon icon="ri:facebook-fill" className={`text-2xl ${socialIconStyle}`} />
               </Link>
               <Link href="https://www.instagram.com/kebab_knights_/" target="_blank" aria-label="Instagram">
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                   transition={{ duration: 0.5, ease: "easeOut" }}
                   className="mt-8 flex gap-6"
                 >
-                  <Link href="https://facebook.com/kebabknights" target="_blank" aria-label="Facebook">
+                  <Link href="https://www.facebook.com/Kebabknights/" target="_blank" aria-label="Facebook">
                     <Icon icon="ri:facebook-fill" className="text-2xl hover:text-primary transition" />
                   </Link>
                   <Link href="https://www.instagram.com/kebab_knights_/" target="_blank" aria-label="Instagram">
