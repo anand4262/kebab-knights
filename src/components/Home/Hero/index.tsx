@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="text-primary text-lg font-medium tracking-widest uppercase mb-4"
         >
-          Melburne’s Most Wanted
+          Melbourne’s Most Wanted
         </motion.p>
 
         <motion.h1

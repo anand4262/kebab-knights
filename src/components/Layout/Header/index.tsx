@@ -45,6 +45,8 @@ const Header: React.FC = () => {
     document.body.style.overflow = navbarOpen ? "hidden" : "";
   }, [navbarOpen]);
 
+  const socialIconStyle = sticky ? "text-black hover:text-primary" : "text-white hover:text-primary";
+
   return (
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
@@ -71,24 +73,15 @@ const Header: React.FC = () => {
 
           {/* Right-side icons */}
           <div className="flex items-center gap-4">
-           {/*  <Link
-              href="tel:0451558600"
-              className={`text-sm sm:text-base font-medium flex items-center gap-2 transition-colors duration-300 ${
-                sticky
-                  ? "text-charcoal hover:text-primary"
-                  : "text-white hover:text-primary"
-              }`}
-            >
-              <Icon icon="solar:phone-bold" className="text-xl text-primary" />
-              +(61)451558600
-            </Link> */}
-
-            {/* <Link
-              href="#menu-section"
-              className="hidden lg:block text-primary bg-primary/15 hover:text-white hover:bg-primary font-medium text-lg py-4 px-8 rounded-full"
-            >
-              Order Now
-            </Link> */}
+            {/* Social Icons */}
+            <div className="hidden lg:flex gap-4 items-center">
+              <Link href="https://facebook.com/kebabknights" target="_blank" aria-label="Facebook">
+                <Icon icon="ri:facebook-fill" className={`text-2xl ${socialIconStyle}`} />
+              </Link>
+              <Link href="https://www.instagram.com/kebab_knights_/" target="_blank" aria-label="Instagram">
+                <Icon icon="ri:instagram-line" className={`text-2xl ml-3 ${socialIconStyle}`} />
+              </Link>
+            </div>
 
             {/* Hamburger Icon */}
             <button
@@ -153,22 +146,21 @@ const Header: React.FC = () => {
                   ))}
                 </ul>
 
-                {/* Order Now CTA */}
+                {/* Social Icons */}
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
                   }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="mt-8"
+                  className="mt-8 flex gap-6"
                 >
-                 {/*  <Link
-                    href="#menu-section"
-                    onClick={() => setNavbarOpen(false)}
-                    className="inline-block text-sm sm:text-base text-primary border border-primary px-5 sm:px-6 py-2 rounded-full hover:bg-primary hover:text-black transition"
-                  >
-                    Order Now
-                  </Link> */}
+                  <Link href="https://facebook.com/kebabknights" target="_blank" aria-label="Facebook">
+                    <Icon icon="ri:facebook-fill" className="text-2xl hover:text-primary transition" />
+                  </Link>
+                  <Link href="https://www.instagram.com/kebab_knights_/" target="_blank" aria-label="Instagram">
+                    <Icon icon="ri:instagram-line" className="text-2xl hover:text-primary transition" />
+                  </Link>
                 </motion.div>
               </motion.nav>
             </motion.div>
